@@ -5,19 +5,19 @@ export const state = {
 };
 
 export const mutations = {
-  SET_OPEN(state) {
+  SET_OPEN(state: any) {
     state.isOpen = true;
   },
-  SET_CLOSED(state) {
+  SET_CLOSED(state: any) {
     state.isOpen = false;
   }
 };
 
 export const actions = {
-  openSidebar({ commit }) {
+  openSidebar({ commit }: any) {
     commit('SET_OPEN');
   },
-  closeSidebar({ commit }) {
+  closeSidebar({ commit }: any) {
     commit('SET_CLOSED');
   }
 };
