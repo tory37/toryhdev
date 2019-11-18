@@ -1,11 +1,23 @@
 <template>
-  <div>Resume coming soon...</div>
+  <div class="resume">
+    <div class="work-experience-wrapper">
+      <WorkExperience />
+    </div>
+  </div>
 </template>
 
 <script>
+import WorkExperience from '@/components/WorkExperience';
+
 export default {
-  name: 'Resume'
+  components: { WorkExperience }
 };
 </script>
 
-<style></style>
+<style scoped lang="scss">
+.resume {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>

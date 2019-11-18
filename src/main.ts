@@ -6,9 +6,15 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faArrowUp,
   faArrowDown,
-  faBars
+  faBars,
+  faGlobeAmericas
 } from '@fortawesome/free-solid-svg-icons';
-import { faTimesCircle } from '@fortawesome/free-regular-svg-icons';
+import {
+  faTimesCircle,
+  faBuilding,
+  faDotCircle,
+  faCalendarAlt
+} from '@fortawesome/free-regular-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -21,9 +27,13 @@ library.add(
   faArrowDown,
   faBars,
   faTimesCircle,
+  faDotCircle,
+  faBuilding,
   faGithub,
   faLinkedin,
-  faTwitter
+  faTwitter,
+  faGlobeAmericas,
+  faCalendarAlt
 );
 
 Vue.component('FAIcon', FontAwesomeIcon);

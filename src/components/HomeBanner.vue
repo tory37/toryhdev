@@ -9,10 +9,11 @@
       />
       <h2 class="title">Welcome!</h2>
       <p class="bio">
-        I am a front end web developer with 4+ years of experience. I've worked
-        mostly with AngularJS and have recent experience in React and Vue. This
-        app is built with Vue! If you are a recruiter or a passerby, everything
-        you need can be found
+        I am a passionate front end engineer with 4+ years of professional
+        responsive web application development experience mainly using
+        AngularJS, Javscript, HTML, and SCSS/CSS, with recent experience in
+        React and Vue. This app is built with Vue! If you are a recruiter or a
+        passerby, everything you need can be found
         <span class="desktop-section">
           in the navbar above
           <FAIcon icon="arrow-up"></FAIcon>
@@ -77,11 +78,12 @@ export default {
     }
 
     h2 {
-      margin: 0;
+      margin: 5px 0 5px 0;
     }
 
     .bio {
       max-width: 800px;
+      margin: 0;
 
       .desktop-section {
         display: none;
