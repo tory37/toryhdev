@@ -50,7 +50,7 @@ export default {
     left: 0;
     top: 0;
 
-    $filter: grayscale(50%) blur(3px) brightness(50%);
+    $filter: grayscale(50%) blur(4px) brightness(41%) contrast(115%);
 
     -webkit-filter: $filter; /* Safari 6.0 - 9.0 */
     filter: $filter;
