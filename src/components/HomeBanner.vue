@@ -8,7 +8,7 @@
         src="@/assets/profilepic.jpg"
       />
       <h2 class="title">Welcome!</h2>
-      <p>
+      <p class="bio">
         I am a front end web developer with 4+ years of experience. I've worked
         mostly with AngularJS and have recent experience in React and Vue. This
         app is built with Vue! If you are a recruiter or a passerby, everything
@@ -39,11 +39,6 @@ export default {
 .home-banner {
   box-sizing: border-box;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: url('https://api.unsplash.com/photos/random?query=grayscale');
   background-color: $color-gray;
   padding: 20px;
   position: relative;
@@ -67,6 +62,12 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 10;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     .profile-pic {
       width: 100px;
@@ -78,21 +79,25 @@ export default {
       margin: 0;
     }
 
-    .desktop-section {
-      display: none;
+    .bio {
+      max-width: 800px;
 
-      @media screen and (min-width: $ss-sm-min) {
-        display: inline;
-      }
-    }
-
-    .mobile-section {
-      @media screen and (min-width: $ss-sm-min) {
+      .desktop-section {
         display: none;
+
+        @media screen and (min-width: $ss-sm-min) {
+          display: inline;
+        }
       }
 
-      i {
-        transform: rotate(35deg);
+      .mobile-section {
+        @media screen and (min-width: $ss-sm-min) {
+          display: none;
+        }
+
+        i {
+          transform: rotate(35deg);
+        }
       }
     }
   }
