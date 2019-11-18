@@ -15,14 +15,14 @@
         you need can be found
         <span class="desktop-section">
           in the navbar above
-          <i class="fas fa-arrow-up"></i>
+          <FAIcon icon="arrow-up"></FAIcon>
         </span>
         <span class="mobile-section">
           in menu in the top corner
-          <i class="fas fa-arrow-up"></i>
+          <FAIcon icon="arrow-up"></FAIcon>
         </span>
         or the links below
-        <i class="fas fa-arrow-down"></i>
+        <FAIcon icon="arrow-down"></FAIcon>
         <br />Thanks for visiting!
       </p>
     </div>

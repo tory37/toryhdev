@@ -2,20 +2,32 @@
   <div class="mobile-nav" :class="{ open: isOpen }">
     <div class="close-row">
       <div class="entry" @click="closeSidebar()">
-        <i class="far fa-times-circle"></i>
+        <FAIcon :icon="['far', 'times-circle']"></FAIcon>
       </div>
     </div>
     <div class="navigation">
       <div class="break"></div>
-      <div class="nav entry" :class="navIsSelectedClass('home')" @click="closeSidebar()">
+      <div
+        class="nav entry"
+        :class="navIsSelectedClass('home')"
+        @click="closeSidebar()"
+      >
         <router-link :to="{ name: 'home' }">Home</router-link>
       </div>
       <div class="break"></div>
-      <div class="nav entry" :class="navIsSelectedClass('resume')" @click="closeSidebar()">
+      <div
+        class="nav entry"
+        :class="navIsSelectedClass('resume')"
+        @click="closeSidebar()"
+      >
         <router-link :to="{ name: 'resume' }">Resume</router-link>
       </div>
       <div class="break"></div>
-      <div class="nav entry" :class="navIsSelectedClass('portfolio')" @click="closeSidebar()">
+      <div
+        class="nav entry"
+        :class="navIsSelectedClass('portfolio')"
+        @click="closeSidebar()"
+      >
         <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
       </div>
       <div class="break"></div>
@@ -23,17 +35,21 @@
     <div class="links">
       <div class="entry">
         <a href="https://github.com/tory37" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
+          <FAIcon :icon="['fab', 'github']"></FAIcon>
         </a>
       </div>
       <div class="entry">
-        <a href="https://www.linkedin.com/in/toryhebert/" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin"></i>
+        <a
+          href="https://www.linkedin.com/in/toryhebert/"
+          target="_blank"
+          rel="noopener"
+        >
+          <FAIcon :icon="['fab', 'linkedin']"></FAIcon>
         </a>
       </div>
       <div class="entry">
         <a href="https://twitter.com/torayquaza" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
+          <FAIcon :icon="['fab', 'twitter']"></FAIcon>
         </a>
       </div>
     </div>

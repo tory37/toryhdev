@@ -41,7 +41,7 @@
         target="_blank"
         rel="noopener"
       >
-        <i class="fab fa-github"></i>
+        <FAIcon :icon="['fab', 'github']"></FAIcon>
       </a>
 
       <a
@@ -50,7 +50,7 @@
         target="_blank"
         rel="noopener"
       >
-        <i class="fab fa-linkedin"></i>
+        <FAIcon :icon="['fab', 'linkedin']"></FAIcon>
       </a>
 
       <a
@@ -59,11 +59,11 @@
         target="_blank"
         rel="noopener"
       >
-        <i class="fab fa-twitter"></i>
+        <FAIcon :icon="['fab', 'twitter']"></FAIcon>
       </a>
 
       <a class="entry mobile" @click="openSidebar()">
-        <i class="fas fa-bars"></i>
+        <FAIcon icon="bars"></FAIcon>
       </a>
     </div>
   </div>
