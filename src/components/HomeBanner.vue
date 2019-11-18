@@ -38,7 +38,7 @@ export default {
 <style scoped lang="scss">
 .home-banner {
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   background-color: $color-gray;
   padding: 20px;
   position: relative;
@@ -50,7 +50,7 @@ export default {
     left: 0;
     top: 0;
 
-    $filter: grayscale(100%) blur(3px) brightness(70%);
+    $filter: grayscale(50%) blur(3px) brightness(50%);
 
     -webkit-filter: $filter; /* Safari 6.0 - 9.0 */
     filter: $filter;
@@ -73,6 +73,7 @@ export default {
       width: 100px;
       height: 100px;
       border-radius: 50%;
+      margin-bottom: 5px;
     }
 
     h2 {

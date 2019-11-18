@@ -1,48 +1,70 @@
 <template>
   <div class="navbar">
     <div class="navigation">
-      <div class="title entry">
-        <router-link :to="{ name: 'home' }">toryh.dev</router-link>
-      </div>
-      <div class="nav entry not-mobile" :class="navIsSelectedClass('home')">
-        <router-link :to="{ name: 'home' }">Home</router-link>
-      </div>
-      <div class="nav entry not-mobile" :class="navIsSelectedClass('resume')">
-        <router-link :to="{ name: 'resume' }">Resume</router-link>
-      </div>
-      <div
-        class="nav entry not-mobile"
-        :class="navIsSelectedClass('portfolio')"
+      <router-link class="title entry" :to="{ name: 'home' }"
+        >toryh.dev</router-link
       >
-        <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
-      </div>
-    </div>
-    <div class="links">
-      <div class="entry not-mobile">
-        <a href="https://github.com/tory37" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="entry not-mobile">
-        <a
-          href="https://www.linkedin.com/in/toryhebert/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="entry not-mobile">
-        <a href="https://twitter.com/torayquaza" target="_blank" rel="noopener">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </div>
 
-      <div class="entry mobile">
-        <a @click="openSidebar()">
-          <i class="fas fa-bars"></i>
-        </a>
-      </div>
+      <router-link
+        :to="{ name: 'home' }"
+        class="entry nav not-mobile"
+        :class="navIsSelectedClass('home')"
+        >Home</router-link
+      >
+
+      <router-link
+        :to="{ name: 'resume' }"
+        class="entry nav not-mobile"
+        :class="navIsSelectedClass('resume')"
+        >Resume</router-link
+      >
+
+      <router-link
+        :to="{ name: 'portfolio' }"
+        class="entry nav not-mobile"
+        :class="navIsSelectedClass('portfolio')"
+        >Portfolio</router-link
+      >
+
+      <router-link
+        :to="{ name: 'contact' }"
+        class="entry nav not-mobile"
+        :class="navIsSelectedClass('contact')"
+        >Contact</router-link
+      >
+    </div>
+
+    <div class="links">
+      <a
+        class="entry not-mobile"
+        href="https://github.com/tory37"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a
+        class="entry not-mobile"
+        href="https://www.linkedin.com/in/toryhebert/"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        class="entry not-mobile"
+        href="https://twitter.com/torayquaza"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <a class="entry mobile" @click="openSidebar()">
+        <i class="fas fa-bars"></i>
+      </a>
     </div>
   </div>
 </template>
@@ -78,30 +100,28 @@ export default {
     box-sizing: border-box;
     padding: 5px;
     height: 100%;
-    display: flex;
-    align-items: center;
     border-radius: 4px;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: $color-gray;
-
-      a {
-        text-decoration: underline;
-      }
     }
 
     &.mobile {
       @media screen and (min-width: $ss-sm-min) {
-        display: none;
+        display: none !important;
       }
     }
 
     &.not-mobile {
-      display: none;
-
-      @media screen and (min-width: $ss-sm-min) {
-        display: inherit;
+      @media screen and (max-width: $ss-xs-max) {
+        display: none !important;
       }
     }
   }

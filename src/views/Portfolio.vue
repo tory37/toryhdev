@@ -1,5 +1,5 @@
 <template>
-  <div>Portfolio</div>
+  <div>Portfolio coming soon...</div>
 </template>
 
 <script>

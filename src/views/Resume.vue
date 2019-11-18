@@ -1,5 +1,5 @@
 <template>
-  <div>Resume</div>
+  <div>Resume coming soon...</div>
 </template>
 
 <script>

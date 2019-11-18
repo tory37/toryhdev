@@ -7,27 +7,15 @@
     </div>
     <div class="navigation">
       <div class="break"></div>
-      <div
-        class="nav entry"
-        :class="navIsSelectedClass('home')"
-        @click="closeSidebar()"
-      >
+      <div class="nav entry" :class="navIsSelectedClass('home')" @click="closeSidebar()">
         <router-link :to="{ name: 'home' }">Home</router-link>
       </div>
       <div class="break"></div>
-      <div
-        class="nav entry"
-        :class="navIsSelectedClass('resume')"
-        @click="closeSidebar()"
-      >
+      <div class="nav entry" :class="navIsSelectedClass('resume')" @click="closeSidebar()">
         <router-link :to="{ name: 'resume' }">Resume</router-link>
       </div>
       <div class="break"></div>
-      <div
-        class="nav entry"
-        :class="navIsSelectedClass('portfolio')"
-        @click="closeSidebar()"
-      >
+      <div class="nav entry" :class="navIsSelectedClass('portfolio')" @click="closeSidebar()">
         <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
       </div>
       <div class="break"></div>
@@ -39,11 +27,7 @@
         </a>
       </div>
       <div class="entry">
-        <a
-          href="https://www.linkedin.com/in/toryhebert/"
-          target="_blank"
-          rel="noopener"
-        >
+        <a href="https://www.linkedin.com/in/toryhebert/" target="_blank" rel="noopener">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
@@ -77,6 +61,7 @@ export default {
 .mobile-nav {
   $mobile-nav-width: 150px;
 
+  z-index: 1000;
   height: 100vh;
   position: absolute;
   right: -$mobile-nav-width;

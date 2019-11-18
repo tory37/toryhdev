@@ -1,30 +1,26 @@
 <template>
   <div class="home">
     <HomeBanner />
-    <HomeLinkCards />
+    <HomePreviewCards />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HomeBanner from '@/components/HomeBanner.vue';
-import HomeLinkCards from '@/components/HomeLinkCards.vue';
+import HomePreviewCards from '@/components/HomePreviewCards.vue';
 
 export default {
   name: 'home',
   components: {
     HomeBanner,
-    HomeLinkCards
+    HomePreviewCards
   }
 };
 </script>
 
 <style scoped lang="scss">
-.profile-pic {
-  width: 80%;
-
-  @media screen and (min-width: $ss-sm-min) {
-    width: 50%;
-  }
+.home {
+  width: 100%;
 }
 </style>
