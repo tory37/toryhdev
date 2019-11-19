@@ -1,5 +1,5 @@
 <template>
-  <div class="work-experience-entry">
+  <div class="experience-entry">
     <h2 class="role">{{ entry.role }}</h2>
     <div class="company-location-dates">
       <FAIcon :icon="['far', 'building']" />
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.work-experience-entry {
+.experience-entry {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

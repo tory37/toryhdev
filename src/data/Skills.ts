@@ -41,6 +41,10 @@ export default [
   },
   {
     title: 'Vue / Vuex',
+    level: 2
+  },
+  {
+    title: 'Typescript',
     level: 1
   }
 ];

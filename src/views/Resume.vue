@@ -1,23 +1,49 @@
 <template>
   <div class="resume">
-    <div class="work-experience-wrapper">
-      <WorkExperience />
+    <div class="main-col">
+      <Experience />
+      <Projects />
+      <div class="skills-mobile">
+        <Skills />
+      </div>
+    </div>
+
+    <div class="skills-desktop">
+      <Skills />
     </div>
   </div>
 </template>
 
 <script>
-import WorkExperience from '@/components/WorkExperience';
+import Experience from '@/components/Experience';
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
 
 export default {
-  components: { WorkExperience }
+  components: { Experience, Skills, Projects }
 };
 </script>
 
 <style scoped lang="scss">
 .resume {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   display: flex;
-  flex-wrap: wrap;
+
+  .main-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-mobile {
+    @media screen and (min-width: $ss-sm-min) {
+      display: none;
+    }
+  }
+
+  .skills-desktop {
+    @media screen and (max-width: $ss-xs-max) {
+      display: none;
+    }
+  }
 }
 </style>
