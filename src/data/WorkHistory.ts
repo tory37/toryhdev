@@ -3,7 +3,7 @@ export default [
     role: 'Senior Software Engineer',
     company: 'Waitr, Inc.',
     location: 'Lafayette, LA',
-    startDate: '10-2017',
+    startDate: '10/2017',
     endDate: 'Current',
     details: [
       {
@@ -31,8 +31,8 @@ export default [
     role: 'Associate Technical Consultant',
     company: 'Perficient, Inc.',
     location: 'Lafayette, LA',
-    startDate: '06-2016',
-    endDate: '10-2017',
+    startDate: '06/2016',
+    endDate: '10/2017',
     details: [
       {
         key: 0,
@@ -51,8 +51,8 @@ export default [
     role: 'Tech / Programming Intern',
     company: 'Lafayette Economic Development Authority (LEDA)',
     location: 'Lafayette, LA',
-    startDate: '01-2015',
-    endDate: '05-2016',
+    startDate: '01/2015',
+    endDate: '05/2016',
     details: [
       {
         key: 0,

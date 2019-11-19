@@ -49,6 +49,11 @@ export default {
 
     a {
       color: white;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 

@@ -6,6 +6,8 @@
       <div class="skills-mobile">
         <Skills />
       </div>
+      <Education />
+      <Certifications />
     </div>
 
     <div class="skills-desktop">
@@ -18,9 +20,11 @@
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
+import Education from '@/components/Education';
+import Certifications from '@/components/Certifications';
 
 export default {
-  components: { Experience, Skills, Projects }
+  components: { Experience, Skills, Projects, Education, Certifications }
 };
 </script>
 
@@ -32,6 +36,7 @@ export default {
   .main-col {
     display: flex;
     flex-direction: column;
+    flex: 1;
   }
 
   .skills-mobile {

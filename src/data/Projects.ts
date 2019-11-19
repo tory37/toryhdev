@@ -30,9 +30,8 @@ export default [
   {
     title: 'Untitled Balloon Game',
     details: [
-      'Mobile video game being developed in Unity using C#',
-      'Codebase almost solely developed by me',
-      'Collaborating with local artist and musician for assets and design',
+      'Video game being developed in Unity using C# for Android and iPhone',
+      'Team: Me as developer & friend as artist / composer',
       'Release date TBD'
     ],
     repo: 'https://github.com/tory37/balloonpopper'

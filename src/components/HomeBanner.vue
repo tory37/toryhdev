@@ -2,6 +2,7 @@
   <div class="home-banner">
     <img class="banner-image" src="@/assets/banner.jpg" alt="Banner" />
     <div class="content">
+      <img class="csm-badge" src="@/assets/csm-badge.png" alt="CSM Certified" />
       <img
         class="profile-pic"
         alt="Profile Pic"
@@ -69,6 +70,13 @@ export default {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    .csm-badge {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 50px;
+    }
 
     .profile-pic {
       width: 100px;
