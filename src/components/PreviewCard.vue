@@ -51,6 +51,7 @@ export default {
     width: 100%;
     height: $image-height;
     object-fit: cover;
+    filter: grayscale(1);
   }
 
   .content {
