@@ -1,5 +1,12 @@
 <template>
   <div class="resume">
+    <a
+      class="pdf-button"
+      href="https://drive.google.com/open?id=10bsbTvO3-TS2Lo2PV0OvoguzlmOBuO4T"
+      target="_blank"
+      rel="noopener"
+      >Download PDF</a
+    >
     <div class="main-col">
       <Experience />
       <Projects />
@@ -32,6 +39,18 @@ export default {
 .resume {
   padding: 20px 0 20px 20px;
   display: flex;
+
+  .pdf-button {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    border: solid 1px white;
+    border-radius: 4px;
+    color: white;
+    background-color: $color-gray-dark;
+    text-decoration: none;
+    padding: 5px;
+  }
 
   .main-col {
     display: flex;

@@ -4,7 +4,7 @@
     <div class="certification" v-for="cert in certifications" :key="cert.title">
       <h2 class="title">{{ cert.title }}</h2>
       <div class="row">
-        <img :alt="titlePreview" :src="getImage(cert.imgName)" />
+        <img :alt="cert.imgName" :src="getImage(cert.imgName)" />
         <div class="date">Acquired: {{ cert.date }}</div>
       </div>
     </div>
