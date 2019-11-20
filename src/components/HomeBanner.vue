@@ -75,7 +75,11 @@ export default {
       position: absolute;
       top: -10px;
       right: -10px;
-      width: 50px;
+      width: 60px;
+
+      @media screen and (min-width: $ss-sm-min) {
+        width: 75px;
+      }
     }
 
     .profile-pic {
