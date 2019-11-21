@@ -73,6 +73,7 @@ export default {
 
     .tech {
       font-size: 12px;
+      width: 100%;
     }
 
     .buttons {
