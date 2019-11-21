@@ -29,9 +29,6 @@ export default {
 .portfolio {
   padding: 20px;
 
-  .h3 {
-  }
-
   .entries {
     display: flex;
     flex-direction: row;

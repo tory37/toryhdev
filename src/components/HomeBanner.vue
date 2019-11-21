@@ -110,7 +110,7 @@ export default {
           display: none;
         }
 
-        i {
+        svg {
           transform: rotate(35deg);
         }
       }
