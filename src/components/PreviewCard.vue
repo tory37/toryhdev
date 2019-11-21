@@ -35,7 +35,7 @@ export default {
   $image-height: calc((#{$card-width} * 9) / 16);
   $bottom-margin: 30px;
 
-  height: 310px;
+  height: $card-height;
   width: $card-width;
   margin: 0 10px 30px 10px;
   background-color: $color-gray-dark;
