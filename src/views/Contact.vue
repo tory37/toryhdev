@@ -1,11 +1,24 @@
 <template>
-  <div>Contact coming soon...</div>
+  <div class="contact">
+    <ContactCard />
+  </div>
 </template>
 
 <script>
+import ContactCard from '@/components/ContactCard';
+
 export default {
-  name: 'Portfolio'
+  components: { ContactCard }
 };
 </script>
 
-<style></style>
+<style>
+.contact {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+}
+</style>
