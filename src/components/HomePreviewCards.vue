@@ -1,8 +1,16 @@
 <template>
   <div class="home-preview-cards">
     <PreviewCard title="resume" routeName="resume" :description="resumeDesc" />
-    <PreviewCard title="portfolio" routeName="portfolio" :description="portfolioDesc" />
-    <PreviewCard title="contact" routeName="contact" :description="contactDesc" />
+    <PreviewCard
+      title="portfolio"
+      routeName="portfolio"
+      :description="portfolioDesc"
+    />
+    <PreviewCard
+      title="contact"
+      routeName="contact"
+      :description="contactDesc"
+    />
   </div>
 </template>
 
@@ -15,8 +23,7 @@ export default {
   },
   data() {
     return {
-      resumeDesc:
-        'My resume layed out with code, and the option to download a pdf',
+      resumeDesc: 'My resume, and the option to download a pdf',
       portfolioDesc:
         'Examples of my personal projects and links to their repos',
       contactDesc: 'Everything you need to contact me'

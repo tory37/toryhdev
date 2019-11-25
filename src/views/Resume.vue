@@ -2,7 +2,7 @@
   <div class="resume">
     <a
       class="pdf-button"
-      href="https://drive.google.com/open?id=17xD5gKXu1VgIwPfhUWRG2DiaH96nemzv"
+      href="https://drive.google.com/open?id=1JrC0Gr-WSV4stV_-20v6ULu6BDw4EsRz"
       target="_blank"
       rel="noopener"
       >Download PDF</a

@@ -44,6 +44,10 @@ export default [
     level: 2
   },
   {
+    title: 'Jest',
+    level: 2
+  },
+  {
     title: 'Typescript',
     level: 1
   }

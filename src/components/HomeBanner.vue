@@ -8,7 +8,7 @@
         alt="Profile Pic"
         src="@/assets/profilepic.jpg"
       />
-      <h2 class="title">Welcome!</h2>
+      <h2 class="title">Hello, I'm Tory!</h2>
       <p class="bio">
         I am a passionate front end engineer with 4+ years of professional
         responsive web application development experience mainly using

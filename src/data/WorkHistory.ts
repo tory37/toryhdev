@@ -23,7 +23,10 @@ export default [
         key: 1,
         description:
           'Contribute to existing web ordering application (React, Thunk) used by customer base for order placement and management',
-        responsibilities: ['Fix bugs and improve existing features']
+        responsibilities: [
+          'Fix bugs and improve existing features',
+          'Implemented Jest testing framework and migrated existing Chai test suites'
+        ]
       }
     ]
   },
@@ -42,7 +45,7 @@ export default [
           'Developed single page application using AngularJS 1.5, Angular 2, Typescript and HTML',
           'Styled pages using SASS with Bourbon-Neat framework and existing in-house styleguide',
           'Wrote unit tests for testing application using Karma, Jasmine and PhantomJS',
-          'Used Frunt to build source to deployable code'
+          'Used Grunt to build source to deployable code'
         ]
       }
     ]
