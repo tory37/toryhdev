@@ -93,6 +93,7 @@ export default {
 
         &:hover {
           background-color: $color-gray;
+          box-shadow: 0 0 5px 5px orange;
         }
       }
     }

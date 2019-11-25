@@ -1,10 +1,11 @@
 <template>
-  <div class="preview-card">
-    <img :alt="titlePreview" :src="imageUrl" />
+  <div class="preview-card" @click="$router.push({ name: routeName })">
+    <div class="image-wrapper">
+      <img :alt="titlePreview" :src="imageUrl" />
+    </div>
     <div class="content">
       <h4>{{ displayTitle }}</h4>
       <p>{{ description }}</p>
-      <button @click="$router.push({ name: routeName })">Go</button>
     </div>
   </div>
 </template>
@@ -46,12 +47,25 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 
-  img {
+  &:hover {
+    box-shadow: 0 0 10px 10px orange;
+  }
+
+  .image-wrapper {
+    overflow: hidden;
     width: 100%;
     height: $image-height;
-    object-fit: cover;
-    filter: grayscale(1);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(1);
+    }
   }
 
   .content {

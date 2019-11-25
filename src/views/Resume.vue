@@ -5,8 +5,7 @@
       href="https://drive.google.com/open?id=1JrC0Gr-WSV4stV_-20v6ULu6BDw4EsRz"
       target="_blank"
       rel="noopener"
-      >Download PDF</a
-    >
+    >Download PDF</a>
     <div class="main-col">
       <Experience />
       <Projects />
@@ -50,6 +49,10 @@ export default {
     background-color: $color-gray-dark;
     text-decoration: none;
     padding: 5px;
+
+    &:hover {
+      box-shadow: 0 0 5px 5px orange;
+    }
   }
 
   .main-col {
