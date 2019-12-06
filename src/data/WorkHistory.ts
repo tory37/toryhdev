@@ -9,6 +9,16 @@ export default [
       {
         key: 0,
         description:
+          'Contribute to existing web ordering application (React, Redux, Thunk) used by customer base for order placement and management',
+        responsibilities: [
+          'Fix bugs and improve existing features',
+          'Implement new features from Product Owner defined requirements and Designer provided mockups',
+          'Implemented Jest testing framework and migrated existing Chai test suites'
+        ]
+      },
+      {
+        key: 1,
+        description:
           'Primary technical owner of in-house developed product responsible for most internal processes at Waitr and Restaurants for order management',
         responsibilities: [
           'Improved / maintained existing AngularJS code base',
@@ -17,15 +27,6 @@ export default [
           'Advise small group of software engineers',
           'Drive process for translating software requirements into working systems and solutions',
           'Support deployment and configuration updates'
-        ]
-      },
-      {
-        key: 1,
-        description:
-          'Contribute to existing web ordering application (React, Thunk) used by customer base for order placement and management',
-        responsibilities: [
-          'Fix bugs and improve existing features',
-          'Implemented Jest testing framework and migrated existing Chai test suites'
         ]
       }
     ]

@@ -12,8 +12,8 @@
       <p class="bio">
         I am a passionate front end engineer with 4+ years of professional
         responsive web application development experience mainly using
-        AngularJS, Javscript, HTML, and SCSS/CSS, with recent experience in
-        React and Vue. This app is built with Vue! If you are a recruiter or a
+        AngularJS, React, Javscript, HTML, and SCSS/CSS, with recent experience
+        in Vue. This app is built with Vue! If you are a recruiter or a
         passerby, everything you need can be found
         <span class="desktop-section">
           in the navbar above
