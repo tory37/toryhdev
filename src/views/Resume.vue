@@ -2,11 +2,10 @@
   <div class="resume">
     <a
       class="pdf-button"
-      href="https://drive.google.com/open?id=1JAUahO7koJLpbQujKUV5dHegzKj91pN1"
+      href="https://drive.google.com/open?id=1AcnuwHttdyE9Iu6Rjz4SYV2Q8egdCmpr"
       target="_blank"
       rel="noopener"
-      >Download PDF</a
-    >
+    >Download PDF</a>
     <div class="main-col">
       <Experience />
       <Projects />
