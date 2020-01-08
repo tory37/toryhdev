@@ -32,7 +32,7 @@ export default {
 <style scoped lang="scss">
 .portfolio-card {
   $card-width: 300px;
-  $card-height: 360px;
+  $card-height: 375px;
   $image-height: calc((#{$card-width} * 9) / 16);
   $bottom-margin: 30px;
 
@@ -69,6 +69,7 @@ export default {
 
     p {
       margin: 0 0 10px 0;
+      font-size: 14px;
     }
 
     .tech {

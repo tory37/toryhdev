@@ -2,7 +2,9 @@
   <div class="navbar">
     <div class="navbar-inner">
       <div class="navigation">
-        <router-link class="title entry" :to="{ name: 'home' }">toryh.dev</router-link>
+        <router-link class="title entry" :to="{ name: 'home' }">
+          <img alt="logo" :src="logoUrl" />
+        </router-link>
 
         <router-link
           :to="{ name: 'home' }"
@@ -65,6 +67,11 @@ import { mapActions } from 'vuex';
 import { isOnRoute } from '@/services/RouteHelper';
 
 export default {
+  computed: {
+    logoUrl() {
+      return require(`@/assets/logo.png`);
+    }
+  },
   methods: {
     ...mapActions('sidebar', ['openSidebar']),
     navIsSelectedClass(nameToCheck) {
@@ -107,6 +114,12 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        width: 35px;
+        -webkit-filter: invert(100%);
+        filter: invert(1);
+      }
 
       &:hover {
         background-color: $color-gray;

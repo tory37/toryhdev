@@ -12,9 +12,9 @@
       <p class="bio">
         I am a passionate front end engineer with 5 years of professional
         responsive web application development experience mainly using
-        AngularJS, React, Javscript, HTML, and SCSS/CSS, with recent experience
-        in Vue. This app is built with Vue! If you are a recruiter or a
-        passerby, everything you need can be found
+        AngularJS, React, Javscript, REST APIs, HTML, and SCSS/CSS, with recent
+        experience in Vue and GraphQL. This app is built with Vue! If you are a
+        recruiter or a passerby, everything you need can be found
         <span class="desktop-section">
           in the navbar above
           <FAIcon icon="arrow-up"></FAIcon>
