@@ -1,38 +1,38 @@
 export default [
   {
-    title: 'Javascript',
-    level: 4
-  },
-  {
-    title: 'AngularJS',
-    level: 4
-  },
-  {
-    title: 'HTML',
-    level: 4
-  },
-  {
-    title: 'CSS / SCSS',
-    level: 4
-  },
-  {
-    title: 'Git & Github',
-    level: 4
-  },
-  {
-    title: 'Teamwork / Collaboration',
-    level: 4
-  },
-  {
-    title: 'Scrum / Agile',
-    level: 4
+    title: 'JavaScript / TypeScript',
+    level: 5
   },
   {
     title: 'React',
+    level: 5
+  },
+  {
+    title: 'AI / Agentic Engineering',
+    level: 5
+  },
+  {
+    title: 'Node.js',
+    level: 4
+  },
+  {
+    title: 'GraphQL',
+    level: 4
+  },
+  {
+    title: 'AWS (Lambda, AppSync, DynamoDB)',
+    level: 4
+  },
+  {
+    title: 'Redux',
+    level: 4
+  },
+  {
+    title: 'Angular',
     level: 3
   },
   {
-    title: 'Redux + Thunk',
+    title: 'Java',
     level: 3
   },
   {
@@ -40,15 +40,23 @@ export default [
     level: 3
   },
   {
-    title: 'Vue / Vuex',
-    level: 2
+    title: 'Python',
+    level: 3
   },
   {
-    title: 'Jest',
-    level: 2
+    title: 'Unity / WebGL',
+    level: 3
   },
   {
-    title: 'Typescript',
-    level: 1
+    title: 'SQL',
+    level: 3
+  },
+  {
+    title: 'Docker / Terraform',
+    level: 3
+  },
+  {
+    title: 'Scrum / Agile',
+    level: 4
   }
 ];

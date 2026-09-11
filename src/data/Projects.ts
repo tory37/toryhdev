@@ -1,39 +1,27 @@
 export default [
   {
-    title: 'toryh.dev',
+    title: 'djaunt-dot-agents',
     details: [
-      'Resume / portfolio site doubling as a means to practice Vue',
-      'Technologies Used: Vue, Vue CLI, Vuex, Vue Router, Javascript and Typescript',
-      'Host: Netlify'
+      'A portable, cross-tool AI agent configuration system (Claude Code, Gemini CLI, Cursor CLI), open-sourced and actively maintained',
+      'Single shared instruction set and skill library synced across three different AI CLIs via a symlink/assembly build script',
+      'Resumable, multi-agent pipeline architecture — disk-backed ledger state, parallel subagent fan-out, safe mid-run recovery after interruption'
     ],
-    repo: 'https://github.com/tory37/toryhdev'
+    repo: 'https://github.com/tory37/djaunt-dot-agents'
   },
   {
-    title: 'WeebsAndOtakus.com Client',
+    title: 'Mealeo',
     details: [
-      'Small scale React application for hobby group started in July, 2019',
-      'Technologies Used: React, Redux, Thunk, Axios, Create React App, Emotion',
-      'Host: Netlify'
+      'Meal-planning/pantry app (Next.js/TypeScript), built solo end-to-end via AI-assisted development',
+      'Gemini built directly into the product for macro estimation and AI-merged shopping lists'
     ],
-    repo: 'https://github.com/tory37/wao-client'
+    repo: 'https://github.com/tory37/djaunt-cooking'
   },
   {
-    title: 'WeebsAndOtakus.com API',
+    title: 'Dekigo',
     details: [
-      'REST API written in NodeJS',
-      'Technologies Used: Node, Express, Passport, Sendgrid / Sendgrid API, MongoDB, Mongoose',
-      'Host: Heroku',
-      'Dababase Host: MongoDB Atlas'
+      'Japanese reading and spaced-repetition vocabulary tool (Next.js, Supabase, Kuromoji), built solo end-to-end via AI-assisted development',
+      'Fully tested with Vitest and Playwright'
     ],
-    repo: 'https://github.com/tory37/wao-api'
-  },
-  {
-    title: 'Untitled Balloon Game',
-    details: [
-      'Video game being developed in Unity using C# for Android and iPhone',
-      'Team: Me as developer & friend as artist / composer',
-      'Release date TBD'
-    ],
-    repo: 'https://github.com/tory37/balloonpopper'
+    repo: 'https://github.com/tory37/dekigo'
   }
 ];

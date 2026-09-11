@@ -10,29 +10,24 @@
           :to="{ name: 'home' }"
           class="entry nav not-mobile"
           :class="navIsSelectedClass('home')"
-        >Home</router-link>
-
-        <router-link
-          :to="{ name: 'resume' }"
-          class="entry nav not-mobile"
-          :class="navIsSelectedClass('resume')"
-        >Resume</router-link>
-
-        <router-link
-          :to="{ name: 'portfolio' }"
-          class="entry nav not-mobile"
-          :class="navIsSelectedClass('portfolio')"
-        >Portfolio</router-link>
+          >Home</router-link
+        >
 
         <router-link
           :to="{ name: 'contact' }"
           class="entry nav not-mobile"
           :class="navIsSelectedClass('contact')"
-        >Contact</router-link>
+          >Contact</router-link
+        >
       </div>
 
       <div class="links">
-        <a class="entry not-mobile" href="https://github.com/tory37" target="_blank" rel="noopener">
+        <a
+          class="entry not-mobile"
+          href="https://github.com/tory37"
+          target="_blank"
+          rel="noopener"
+        >
           <FAIcon :icon="['fab', 'github']"></FAIcon>
         </a>
 
