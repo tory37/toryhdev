@@ -17,18 +17,10 @@
       <div class="break"></div>
       <div
         class="nav entry"
-        :class="navIsSelectedClass('resume')"
+        :class="navIsSelectedClass('contact')"
         @click="closeSidebar()"
       >
-        <router-link :to="{ name: 'resume' }">Resume</router-link>
-      </div>
-      <div class="break"></div>
-      <div
-        class="nav entry"
-        :class="navIsSelectedClass('portfolio')"
-        @click="closeSidebar()"
-      >
-        <router-link :to="{ name: 'portfolio' }">Portfolio</router-link>
+        <router-link :to="{ name: 'contact' }">Contact</router-link>
       </div>
       <div class="break"></div>
     </div>

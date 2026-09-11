@@ -10,22 +10,15 @@
       />
       <h2 class="title">Hello, I'm Tory!</h2>
       <p class="bio">
-        I am a passionate front end engineer with 5 years of professional
-        responsive web application development experience mainly using
-        AngularJS, React, Javscript, REST APIs, HTML, and SCSS/CSS, with recent
-        experience in Vue and GraphQL. This app is built with Vue! If you are a
-        recruiter or a passerby, everything you need can be found
-        <span class="desktop-section">
-          in the navbar above
-          <FAIcon icon="arrow-up"></FAIcon>
-        </span>
-        <span class="mobile-section">
-          in menu in the top corner
-          <FAIcon icon="arrow-up"></FAIcon>
-        </span>
-        or the links below
-        <FAIcon icon="arrow-down"></FAIcon>
-        <br />Thanks for visiting!
+        Senior frontend engineer with 9+ years building production
+        React/TypeScript web applications, including 4+ years owning the core
+        client of a K-5 ed-tech platform serving live student assessments. Known
+        as the engineer who gets put on whatever the team needs next and figures
+        it out — from assessment architecture to Unity/AR game development to
+        backend work — and deeply fluent in AI-assisted engineering, running
+        multi-agent development workflows daily both on the job and in my own
+        tooling.
+        <br />Everything below is my resume — thanks for visiting!
       </p>
     </div>
   </div>
@@ -96,24 +89,6 @@ export default {
     .bio {
       max-width: 800px;
       margin: 0;
-
-      .desktop-section {
-        display: none;
-
-        @media screen and (min-width: $ss-sm-min) {
-          display: inline;
-        }
-      }
-
-      .mobile-section {
-        @media screen and (min-width: $ss-sm-min) {
-          display: none;
-        }
-
-        svg {
-          transform: rotate(35deg);
-        }
-      }
     }
   }
 }
