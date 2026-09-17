@@ -1,24 +1,16 @@
 # toryhdev
 
-## Project setup
+Plain static resume site — no build step. `index.html` and `contact.html`
+reference `css/style.css`, `js/main.js`, and images in `assets/` directly.
+
+## Local preview
+
 ```
-npm install
+python3 -m http.server 8080
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Then open http://localhost:8080
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Deploy
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Served via GitHub Pages from this branch's root.
