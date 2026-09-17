@@ -95,11 +95,6 @@ svg.icon {
   font: inherit;
 }
 
-.navbar .entry img {
-  width: 35px;
-  filter: invert(1);
-}
-
 .navbar .entry:hover {
   background-color: var(--dj-surface-raised);
   color: var(--dj-accent);
@@ -122,10 +117,8 @@ svg.icon {
 }
 
 .dj-mark {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  opacity: 0.85;
+  width: 22px;
+  height: 22px;
 }
 
 .navigation .nav {
