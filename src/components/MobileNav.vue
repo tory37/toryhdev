@@ -75,8 +75,9 @@ export default {
   right: -$mobile-nav-width;
   top: 0;
   width: $mobile-nav-width;
-  background-color: darken($color-gray-dark, 5%);
-  color: white;
+  background-color: $color-surface-raised;
+  border-left: 1px solid $color-border;
+  color: $color-text;
   padding-bottom: 10px;
 
   box-sizing: border-box;
@@ -94,7 +95,7 @@ export default {
 
   .break {
     width: 100%;
-    border-top: solid 1px $color-gray-light;
+    border-top: solid 1px $color-border;
   }
 
   .close-row {
@@ -117,7 +118,7 @@ export default {
     cursor: pointer;
 
     &:hover {
-      background-color: $color-gray;
+      background-color: $color-surface;
 
       a {
         text-decoration: underline;
@@ -141,10 +142,14 @@ export default {
       &.selected {
         text-decoration: underline;
         font-weight: 600;
+
+        a {
+          color: $color-accent;
+        }
       }
 
       a {
-        color: white;
+        color: $color-text;
         text-decoration: none;
         width: 100%;
         text-align: center;
@@ -163,7 +168,7 @@ export default {
       a {
         width: 100%;
         text-align: center;
-        color: white;
+        color: $color-text;
       }
     }
   }

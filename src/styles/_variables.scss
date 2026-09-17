@@ -12,13 +12,19 @@ $navbar-height: 40px;
 // Sidebar
 $sidebar-open-speed: 0.5s;
 
-// Colors
-$color-gray-lighter: #999999;
-$color-gray-light: #777777;
-$color-gray: #555555;
-$color-gray-dark: #333333;
-$color-gray-darker: #111111;
-$color-accent: #6e8898;
-$color-primary: #533a7b;
-$color-secondary: #a393bf;
-$color-links: #f4d35e;
+// Colors — sourced from the Djaunt brand tokens (djaunt-branding repo),
+// theme applied via data-dj-theme="stone" on <html>.
+$color-bg: var(--dj-bg);
+$color-surface: var(--dj-surface);
+$color-surface-raised: var(--dj-surface-raised);
+$color-border: var(--dj-border);
+$color-text: var(--dj-text);
+$color-text-muted: var(--dj-text-muted);
+$color-accent: var(--dj-accent);
+$color-accent-hi: var(--dj-accent-hi);
+$color-on-accent: var(--dj-on-accent);
+
+// Type
+$font-display: var(--dj-font-display);
+$font-body: var(--dj-font-body);
+$font-mono: var(--dj-font-mono);

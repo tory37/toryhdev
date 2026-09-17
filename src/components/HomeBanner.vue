@@ -34,7 +34,8 @@ export default {
 .home-banner {
   box-sizing: border-box;
   width: 100%;
-  background-color: $color-gray;
+  background-color: $color-surface;
+  border-bottom: 1px solid $color-border;
   padding: 20px;
   position: relative;
 

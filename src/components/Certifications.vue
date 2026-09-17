@@ -38,10 +38,11 @@ export default {
   margin-bottom: 20px;
 
   .title {
-    color: darken(white, 10%);
+    color: $color-text;
     margin: 0;
     margin-bottom: 5px;
     text-decoration: underline;
+    text-decoration-color: $color-border;
   }
 
   .row {
@@ -53,8 +54,11 @@ export default {
     }
 
     .date {
-      font-size: 14px;
-      color: darken(white, 16%);
+      font-family: $font-mono;
+      font-size: var(--dj-text-xs);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: $color-text-muted;
     }
   }
 }

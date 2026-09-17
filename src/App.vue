@@ -26,13 +26,21 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: white;
+  color: $color-text;
   height: 100vh;
-  background-color: $color-gray-darker;
+  background-color: $color-bg;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-display;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 #nav {
@@ -43,7 +51,7 @@ body {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: $color-links;
+      color: $color-accent;
     }
   }
 }

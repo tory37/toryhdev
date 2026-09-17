@@ -4,6 +4,7 @@ import router from './router';
 import store from './store';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import './fa-setup';
+import '@/assets/djaunt-tokens.css';
 
 Vue.component('FAIcon', FontAwesomeIcon);
 

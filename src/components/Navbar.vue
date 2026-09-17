@@ -6,6 +6,8 @@
           <img alt="logo" :src="logoUrl" />
         </router-link>
 
+        <img class="dj-mark" alt="Djaunt" :src="djauntIconUrl" title="Djaunt" />
+
         <router-link
           :to="{ name: 'home' }"
           class="entry nav not-mobile"
@@ -65,6 +67,9 @@ export default {
   computed: {
     logoUrl() {
       return require(`@/assets/logo.png`);
+    },
+    djauntIconUrl() {
+      return require(`@/assets/djaunt-icon-gold.svg`);
     }
   },
   methods: {
@@ -80,8 +85,9 @@ export default {
 .navbar {
   height: 100%;
   width: 100%;
-  background-color: $color-gray-dark;
-  color: white;
+  background-color: $color-surface;
+  border-bottom: 1px solid $color-border;
+  color: $color-text;
 
   box-sizing: border-box;
   display: flex;
@@ -103,7 +109,7 @@ export default {
       height: calc(100% - 5px);
       border-radius: 4px;
       cursor: pointer;
-      color: white;
+      color: $color-text;
       text-decoration: none;
 
       display: flex;
@@ -117,8 +123,8 @@ export default {
       }
 
       &:hover {
-        background-color: $color-gray;
-        box-shadow: 0 0 5px 5px orange;
+        background-color: $color-surface-raised;
+        color: $color-accent;
       }
 
       &.mobile {
@@ -153,9 +159,16 @@ export default {
         }
 
         a {
-          color: white;
+          color: $color-text;
           text-decoration: none;
         }
+      }
+
+      .dj-mark {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        opacity: 0.85;
       }
 
       .nav {
@@ -165,10 +178,14 @@ export default {
         &.selected {
           text-decoration: underline;
           font-weight: 600;
+
+          a {
+            color: $color-accent;
+          }
         }
 
         a {
-          color: white;
+          color: $color-text;
           text-decoration: none;
         }
       }
@@ -185,7 +202,7 @@ export default {
         a {
           width: 100%;
           text-align: center;
-          color: white;
+          color: $color-text;
         }
       }
     }

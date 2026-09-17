@@ -40,15 +40,20 @@ export default {
   margin-bottom: 20px;
 
   .role {
-    color: darken(white, 10%);
+    color: $color-text;
     margin: 0;
     text-decoration: underline;
+    text-decoration-color: $color-border;
   }
 
   .company-location-dates {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-family: $font-mono;
+    font-size: var(--dj-text-xs);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $color-text-muted;
 
     .spacer {
       margin-left: 15px;
@@ -63,14 +68,14 @@ export default {
 
     .details-description {
       font-style: italic;
-      color: darken(white, 10%);
+      color: $color-text;
       margin-bottom: 5px;
     }
 
     .details-responsibility {
       font-size: 14px;
       margin-left: 10px;
-      color: darken(white, 16%);
+      color: $color-text-muted;
     }
   }
 }
