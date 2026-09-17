@@ -10,6 +10,6 @@ export default {
 
 <style scoped lang="scss">
 h1 {
-  color: white;
+  color: $color-text;
 }
 </style>

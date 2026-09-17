@@ -38,17 +38,20 @@ export default {
   margin-bottom: 20px;
 
   .title {
-    color: darken(white, 10%);
+    color: $color-text;
     margin: 0;
     margin-bottom: 5px;
     text-decoration: underline;
+    text-decoration-color: $color-border;
   }
 
   .repo {
     margin-bottom: 5px;
+    font-family: $font-mono;
+    font-size: var(--dj-text-xs);
 
     a {
-      color: white;
+      color: $color-accent;
       cursor: pointer;
 
       &:hover {
@@ -60,7 +63,7 @@ export default {
   .detail {
     font-size: 14px;
     margin-left: 10px;
-    color: darken(white, 16%);
+    color: $color-text-muted;
   }
 }
 </style>

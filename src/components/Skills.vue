@@ -55,7 +55,7 @@ export default {
     }
 
     .level-wrapper {
-      $border: 1px solid white;
+      $border: 1px solid $color-border;
 
       width: 100px;
       height: 15px;
@@ -73,7 +73,7 @@ export default {
         height: 100%;
 
         &.filled {
-          background-color: $color-gray-light;
+          background-color: $color-accent;
         }
       }
     }

@@ -35,7 +35,8 @@ export default {
   align-items: center;
   height: 275px;
 
-  background-color: $color-gray;
+  background-color: $color-surface;
+  border: 1px solid $color-border;
   width: 350px;
   border-radius: 4px;
   padding: 10px;
@@ -66,10 +67,11 @@ export default {
   }
 
   a {
-    color: white;
+    color: $color-text;
 
     &:hover {
       font-weight: 600;
+      color: $color-accent;
     }
   }
 }
