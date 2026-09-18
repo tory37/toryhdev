@@ -1,14 +1,14 @@
-/* Djaunt "stone" theme tokens — trimmed to what this page uses. */
+/* Djaunt "hoard" theme tokens — trimmed to what this page uses. */
 :root {
-  --dj-accent: #93A98C;
-  --dj-accent-hi: #BACBB4;
-  --dj-bg: #0A0C09;
-  --dj-surface: #111510;
-  --dj-surface-raised: #181D16;
-  --dj-border: #242A21;
+  --dj-accent: #D4A017;
+  --dj-accent-hi: #F0C24B;
+  --dj-bg: #0D0C0A;
+  --dj-surface: #14120F;
+  --dj-surface-raised: #1C1913;
+  --dj-border: #2A251C;
   --dj-text: #EDE6D6;
   --dj-text-muted: #8E887A;
-  --dj-on-accent: #0A0C09;
+  --dj-on-accent: #0D0C0A;
 
   --dj-font-display: 'Archivo', 'Helvetica Neue', Helvetica, sans-serif;
   --dj-font-body: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, sans-serif;
