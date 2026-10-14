@@ -59,16 +59,18 @@
     <main id="top" class="wrap">
       <header class="dj-hero">
         <span class="dj-hero-mark dj-mark" aria-hidden="true"></span>
-        <p class="dj-hero-kicker">Software engineer · Frontend-first, growing full stack · Lafayette, LA · Remote</p>
+        <p class="dj-hero-kicker">Software engineer · AI-native · Frontend-first, growing full stack · Lafayette, LA · Remote</p>
         <h1 class="dj-hero-title">Tory Hebert</h1>
         <p class="dj-hero-lede">
-          Ten years building production React and TypeScript. At Amira Learning I work across the reading
-          platform used by 5.5M+ students: the educator app teachers use, the reading app that delivers
-          tutor stories and assessments, the Angular app students land in, the internal tool CSMs use to
-          configure districts and schools, and the parent portal. I started on the at-home apps and the
-          Wonderscope AR game. Now I also write Python on the backend: the services that score assessments
-          and assign them to students, and the pipeline that builds the assessment content. Hand me an
-          unfamiliar project and I'll learn it and ship it, with AI agents in my workflow every day.
+          AI-native software engineer with ten years building production React and TypeScript. Agents are
+          part of how I plan, build, test and debug every day, and I build my own agent tooling, open source
+          below. At Amira Learning I work across the reading platform used by 5.5M+ students: the educator
+          app, the reading app that delivers tutor stories and assessments, the Angular app students land
+          in, the internal tool CSMs use to configure districts and schools, and the parent portal. I started
+          on the at-home apps and the Wonderscope AR game. Now I also write Python on the backend, on the
+          services that score and assign assessments and the pipeline that builds assessment content. Hand
+          me an unfamiliar project and I'll learn it and ship it. I work directly with product, QA, UX
+          designers, learning designers and psychometricians, not just other engineers.
         </p>
         <dl class="facts">
           <div><dt>Years shipping</dt><dd>10</dd></div>
@@ -106,28 +108,26 @@
             <h3>Senior Software Engineer</h3>
             <p class="role-where">Amira Learning · Lafayette, LA (remote)</p>
 
-            <h4>Own the core K-5 student reading and assessment client</h4>
-            <p class="role-scope">5.5M+ students, 4,000+ districts nationwide</p>
+            <h4>Assessments and reading products across every client</h4>
             <ul>
-              <li>Migrated the real-time assessment engine from a client-authoritative to a server-orchestrated architecture, now serving all English-language assessments in production.</li>
-              <li>Shipped an LLM-powered conversational comprehension feature end to end, a WebGL-rendered animated tutor avatar system, and a 6-brand white-label platform serving enterprise partners including NWEA and HMH.</li>
-              <li>Led frontend development on the teacher/admin app for 16 months: bilingual (Spanish) assessment configuration, screening-window scheduling, and a client-side Word-document generator for intervention plans.</li>
-              <li>Built and maintained a parent portal and a district license-configuration grid, replacing per-stack feature flags with per-district license entitlement checks.</li>
-              <li>Delivered cross-platform frontend work during the Amira/Istation platform merger.</li>
-            </ul>
-
-            <h4>Took lead on the team's AR/Unity and non-web projects</h4>
-            <ul>
-              <li>Sole Unity/C# expert on an acquired AR mobile game (Wonderscope) integrating Amira's tutor. Taught Unity to coworkers from scratch, built a custom branching-path extension to the timeline editor, and owned 5 production releases across 102 commits and 48 PRs.</li>
-              <li>Built a programmatic After Effects scripting pipeline that generated hundreds of instructional letter-teaching videos.</li>
-              <li>Picked up backend and devops work as needed: GraphQL API contracts, a Lambda + DynamoDB microservice, a GraphQL layer inside a legacy ASP.NET MVC monolith, and lighter Python (Athena, S3) and C# (Istation's ISWeb) work.</li>
+              <li>Own assessment features across the educator app, the reading app and the Angular student app, on a platform serving 5.5M+ students.</li>
+              <li>Educator app: the teacher-facing tools, including Spanish assessment configuration, screening-window scheduling, and a Word-document generator for intervention plans.</li>
+              <li>Reading app: delivers tutor stories and assessments to students.</li>
+              <li>Angular student app: where students land at login. It fetches their assignments, decides when to administer them, and routes them to the reading app.</li>
+              <li>Internal config tool: the CSM-facing tool that sets licenses and settings across districts and schools. It replaced per-stack feature flags with per-district license checks.</li>
+              <li>Parent portal: a summary app with each student's latest information and suggested activities.</li>
+              <li>Backend in Python: assessment scoring and orchestration, the assignment service, and the content build pipeline for a new assessment offering.</li>
+              <li>Work directly and daily with QA and product managers. Work regularly with UX designers and learning designers, and weekly with psychometricians on assessment work. I turn their specs and workflows into shipped features and into tools they can use without an engineer.</li>
+              <li>Built the Assessment Preview Tool, a tool that plays any assessment item directly in the reading client. Learning designers and client developers no longer have to assign a full assessment and sit through the multi-minute flow to preview one item, even when the item doesn't exist in that environment yet.</li>
+              <li>Wonderscope: led the team on an acquired AR reading game that integrates Amira's tutor. I was the only one with Unity/C# experience at the start, and I taught it to the rest of the team. Worked daily with a game designer, 3D modelers and animators.</li>
+              <li>Built an After Effects scripting pipeline that generated hundreds of letter-teaching videos.</li>
             </ul>
 
             <h4>AI-native engineering, daily</h4>
             <ul>
-              <li>Work inside an org-wide AI agent-tooling and MCP-integration stack to debug production issues and build features.</li>
-              <li>Adopted early (ChatGPT, then Cursor) and led internal Cursor adoption when it was the leading tool. Now run primarily through Claude Code, with Copilot, ChatGPT's coding agent, and Gemini as situational fallbacks.</li>
-              <li>Contribute to the team's shared agent-tooling collection, and build my own tools — the projects below — to remove recurring friction.</li>
+              <li>Work through AI agents every day to plan, build, test and debug, including an org-wide agent-tooling and MCP-integration stack for production debugging.</li>
+              <li>Adopted early (ChatGPT, then Cursor) and led internal Cursor adoption. Now run primarily through Claude Code.</li>
+              <li>Build my own agent tools, the projects below, to remove recurring friction.</li>
             </ul>
           </div>
         </article>
