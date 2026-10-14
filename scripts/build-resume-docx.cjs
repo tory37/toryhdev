@@ -67,8 +67,6 @@ const education = all(/<li class="dj-divided-item">([\s\S]*?)<\/li>/g, section('
 
 const contact = section('contact');
 const email = one(/href="mailto:([^"]+)"/, contact, 'email');
-const phoneHref = one(/href="tel:([^"]+)"/, contact, 'phone');
-const phone = text(one(/href="tel:[^"]+">([\s\S]*?)</, contact, 'phone text'));
 const linkedin = one(/href="(https:\/\/www\.linkedin\.com[^"]+)"/, contact, 'linkedin');
 const github = one(/href="(https:\/\/github\.com\/[^"/]+)"/, contact, 'github');
 
@@ -110,7 +108,6 @@ children.push(
     spacing: { after: 60 },
     children: [
       link(email, `mailto:${email}`), sep(),
-      link(phone, `tel:${phoneHref}`), sep(),
       link(linkedin.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''), linkedin), sep(),
       link(github.replace(/^https:\/\//, ''), github),
     ],
