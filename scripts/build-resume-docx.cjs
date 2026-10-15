@@ -69,6 +69,7 @@ const contact = section('contact');
 const email = one(/href="mailto:([^"]+)"/, contact, 'email');
 const linkedin = one(/href="(https:\/\/www\.linkedin\.com[^"]+)"/, contact, 'linkedin');
 const github = one(/href="(https:\/\/github\.com\/[^"/]+)"/, contact, 'github');
+const siteHost = fs.readFileSync(path.join(ROOT, 'CNAME'), 'utf8').trim();
 const location = one(/·\s*([^·]+, [A-Z]{2})\s*·/, kicker, 'location');
 
 // ---------- document ----------
@@ -110,6 +111,7 @@ children.push(
     children: [
       run(`${location} (remote)`), sep(),
       link(email, `mailto:${email}`), sep(),
+      link(siteHost, `https://${siteHost}`), sep(),
       link(linkedin.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''), linkedin), sep(),
       link(github.replace(/^https:\/\//, ''), github),
     ],
