@@ -69,6 +69,7 @@ const contact = section('contact');
 const email = one(/href="mailto:([^"]+)"/, contact, 'email');
 const linkedin = one(/href="(https:\/\/www\.linkedin\.com[^"]+)"/, contact, 'linkedin');
 const github = one(/href="(https:\/\/github\.com\/[^"/]+)"/, contact, 'github');
+const location = one(/·\s*([^·]+, [A-Z]{2})\s*·/, kicker, 'location');
 
 // ---------- document ----------
 // Plain and ATS-safe: one column, real bullets, standard fonts. The brand shows up only
@@ -103,10 +104,11 @@ const children = [];
 
 children.push(
   new Paragraph({ spacing: { after: 20 }, children: [run(name, { bold: true, size: 44 })] }),
-  new Paragraph({ spacing: { after: 60 }, children: [run(kicker.replace(/ · Remote$/, ' (remote)'), { size: 21, color: MUTED })] }),
+  new Paragraph({ spacing: { after: 60 }, children: [run(kicker.replace(/ · [^·]+, [A-Z]{2} · Remote$/, ''), { size: 21, color: MUTED })] }),
   new Paragraph({
     spacing: { after: 60 },
     children: [
+      run(`${location} (remote)`), sep(),
       link(email, `mailto:${email}`), sep(),
       link(linkedin.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''), linkedin), sep(),
       link(github.replace(/^https:\/\//, ''), github),
