@@ -17,6 +17,8 @@ Tory Hebert's resume and portfolio. Plain static site — no build step.
   ```
 
   Needs the `docx` npm package (`npm i -g docx` if it's missing).
+- `resume/Tory-Hebert-Resume.pdf` — PDF of the same file. After rebuilding the docx:
+  `cd resume && soffice --headless --convert-to pdf Tory-Hebert-Resume.docx`
 
 Theme: `data-dj-theme="void"` on `<html>`. Swap the attribute to restyle the site
 in any other Djaunt element.

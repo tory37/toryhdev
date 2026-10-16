@@ -105,11 +105,11 @@ const children = [];
 
 children.push(
   new Paragraph({ spacing: { after: 20 }, children: [run(name, { bold: true, size: 44 })] }),
-  new Paragraph({ spacing: { after: 60 }, children: [run(kicker.replace(/ · [^·]+, [A-Z]{2} · Remote$/, ''), { size: 21, color: MUTED })] }),
+  new Paragraph({ spacing: { after: 60 }, children: [run(kicker.replace(/ · [^·]+, [A-Z]{2} · Remote only$/, ''), { size: 21, color: MUTED })] }),
   new Paragraph({
     spacing: { after: 60 },
     children: [
-      run(`${location} (remote)`), sep(),
+      run(`${location} (remote only)`), sep(),
       link(email, `mailto:${email}`), sep(),
       link(siteHost, `https://${siteHost}`), sep(),
       link(linkedin.replace(/^https:\/\/(www\.)?/, '').replace(/\/$/, ''), linkedin), sep(),
@@ -158,6 +158,11 @@ children.push(sectionLabel('Skills'), new Paragraph({ children: [run(skills.join
 children.push(sectionLabel('Education'));
 education.forEach((e) =>
   children.push(new Paragraph({ spacing: { after: 40 }, children: [run(e.title, { bold: true, size: 20 }), run(' — ' + e.detail, { size: 20 })] })),
+);
+
+children.push(
+  sectionLabel('Work preference'),
+  new Paragraph({ children: [run('Remote only. Not open to on-site or hybrid roles. Location is listed for reference.', { size: 20 })] }),
 );
 
 const doc = new Document({
